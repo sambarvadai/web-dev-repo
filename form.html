@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+<link href="form.css" rel="stylesheet" type="text/css">
+
+<head>
+    <title>FCC Front Web-Project 2</title>
+</head>
+
+<body>
+    <h1 id="title">Operating system survey form</h1>
+    <p id="description">A short survey for OS preferences</p>
+    <p>(Fields indicated with a <span style="color:red;font-size:22px">*</span> are mandatory)</p>
+    <div>
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label">Name<span style="color:red;font-size:22px">*</span> :</label>
+            <input type="text" placeholder="Enter your name" id="name" required>
+            <label for="email" id="email-label">Email ID<span style="color:red;font-size:22px">*</span>:</label>
+            <input type="email" id="email" placeholder="Enter your email ID" required>
+            <label for="number" id="number-label">Age<span style="color:red;font-size:22px">*</span>:</label>
+            <input type="number" id="number" min="15" max="100" placeholder="Enter your Age" required>
+            <label for="os-choice">Select choice of Operating System</label>
+            <input id="os-choice" list="dropdown" placeholder="Select your OS Choice">
+            <datalist id="dropdown">
+			<option value="Windows">
+			<option value="Mac OS">
+				<option value="Linux">
+					<option value="Other">
+		</datalist>
+            <label>Given a choice, will you change your Operating system to a different one?</label>
+            <label><input type="radio" name="os_option" value="Yes">Yes</label>
+            <label><input type="radio" name="os_option" value="No">No</label>
+            <label><input type="radio" name="os_option" value="Not sure">Not sure</label>
+            <label for="checkbox_input1">What are the features that you want in an OS?</label>
+            <label><input type="checkbox" id="checkbox_input1" value="Malware protection">Malware Protection</label>
+            <label><input type="checkbox" id="checkbox_input2" value="Faster file system">Faster file system</label>
+            <label><input type="checkbox" id="checkbox_input3" value="Better RAM Management">Better RAM management</label>
+            <label><input type="checkbox" id="checkbox_input4" value="Fluid Animations">Fluid animations</label>
+            <label><input type="checkbox" id="checkbox_input5" value="Voice Assistant and AI">Voice Assistant and AI</label>
+            <label><input type="checkbox" id="checkbox_input6" value="Software compatibility">Software compatibility</label>
+            <label><input type="checkbox" id="checkbox_input7" value="Open Source components">Open source components</label>
+            <label><input type="checkbox" id="checkbox_input8" value="Battery optimizations">Battery optimizations</label>
+            <label><input type="checkbox" id="checkbox_input9" value="Other">Other</label>
+            <label for="text_area">If other selected, kindly input your suggestions here</label>
+            <textarea id="text_area" placeholder="Your suggestions here" rows="7" cols="21"></textarea>
+            <button type="Submit" id="submit" value="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<footer> Made by Anirudh. All my creations, from the simplest to the most complex will be a tribute to <a href="https://fossiiita.github.io/humblefoolcup/humblefool/humblefool.html" target="_blank">Harsha Suryanarayana</a></footer>
+
+</html>
