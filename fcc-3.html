@@ -1,28 +1,27 @@
 <!doctype html>
-<link href="fcc-3.css" rel="stylesheet" type="text/css">
-
 <head>
     <title>
         FCC-Project 3
     </title>
 </head>
-
+<link href="fcc-3.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <body>
-    <header>
+    <header id="header">
         <div id="one_one">
-            <img id="header_img" src="https://i.ibb.co/r2MX7Q6/icons8-city-buildings-64.png" alt="icons8-city-buildings-64" border="0">
+            <img id="header-img" src="https://i.ibb.co/r2MX7Q6/icons8-city-buildings-64.png" alt="icons8-city-buildings-64" border="0">
             <h3 id="header_heading"><strong>EXOTIC</strong><span style="font-size:0.9em">HOMES</span></h3>
         </div>
-        <nav>
-            <a href="#about-div">About</a>
-            <a href="#cities_div">Cities</a>
-            <a href="#">Contact Us</a>
+        <nav id="nav-bar">
+            <a href="#about-div" class="nav-link">About</a>
+            <a href="#cities_div" class="nav-link">Cities</a>
+            <a href="#fourth_div" class="nav-link">Contact Us</a>
         </nav>
     </header>
     <div id="about-div" class="about_class">
         <div id="twoone">
             <h2>Your dream home, now just a click away!</h2>
-            <p>(available on the Play Store and the App Store)</p>
+            <p>(App available on the Play Store and the App Store)</p>
             <div id="text-flex">
                 <div id="text_div">
                     <p id="about-p">At EXOTICHOMES, our vision is to make sure that you get the house of your dreams, at the best price possible.<br> We understand that your hard earned money deserves to be spent on the absolute best of things. And at EXOTICHOMES, we
@@ -51,7 +50,7 @@
         <h2 id="third_heading">We are currently live in</h2>
         <div id="city_flex_div">
             <div>
-                <h3>SF Bay Area</h3>
+                <h3>Boston</h3>
                 <button type="submit" class="view_btn" id="sf_btn">View properties</button>
             </div>
             <div>
@@ -68,13 +67,25 @@
             </div>
         </div>
     </div>
-    <div id="know_div">
-        <div id="know_content">
-            <h2 id="know_head">Knowledge Bytes</h2>
-            <p>Listen to one of our in hose experts highlighting the hallmarks of a top notch property.</p>
-        </div>
-        <div id="iframe_div">
-            <iframe src="https://www.youtube.com/embed/9nHDT5XL4KY"></iframe>
-        </div>
+  <div id="knowledge_div">
+    <h2 id="knowledge_heading">Knowledge Bytes</h2>
+    <p>Please watch this short video, where our in-house expert tells you how to find a good property.</p>
+    <div id="yt_container">
+        <iframe id="video" src="https://www.youtube.com/embed/9nHDT5XL4KY" frameborder="0"></iframe>
     </div>
+  </div>
+  <div id="fourth_div">
+      <h3>Sign up today to get access to our in house services, answers to popular queries, and insights from the market.</h3>
+    <div id="form_div">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" id="signup">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="johndoe@example.com">
+            <input type="submit" id="submit" value="Yes,I'm In!">
+            <p id="gdpr_para">We comply with all standard privacy policies and GDPR rules.</p>
+        </form>
+    </div>
+    </div>
+    <footer>
+    <p>Made by Anirudh. All my creations, from the simplest to the most complex will be a tribute to <a href="https://fossiiita.github.io/humblefoolcup/humblefool/humblefool.html" target="_blank">Harsha Suryanarayana</a></p>
+    </footer>
 </body>
