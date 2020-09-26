@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<head>
+    <title>Java technical documentation</title>
+</head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="fcc-4.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<body>
+    <nav id="navbar">
+        <header id="nav_header">Java Documentation</header>
+            <a class="nav-link" id="first_navlink" href="#Introduction">Introduction</a>
+            <a class="nav-link" id="second_navlink" href="#Pre_Requisites">Pre Requisites</a>
+            <a class="nav-link" id="third_navlink" href="#Printing_Hello_World">Printing Hello World</a>
+            <a class="nav-link" id="fourth_navlink" href="#Variable_eh?">Variable eh?</a>
+            <a class="nav-link" id="fifth_navlink" href="#Creating_our_first_Variable">Creating our first Variable</a>
+            <a class="nav-link" id="sixth_navlink" href="#Did_you_just_say_operation?">Did you just say operation?</a>
+            <a class="nav-link" id="seventh_navlink" href="#What_is_this_object_thing?">What is this object thing?</a>
+            <a class="nav-link" id="ninth_navlink" href="#Taking_user_input">Taking user input</a>
+            <a class="nav-link" id="tenth_navlink" href="#What_are_functions?">What are functions?</a>
+            <a class="nav-link" id="eleventh_navlink" href="#Creating_our_first_Java_function">Creating our first Java function</a>
+            <a class="nav-link" id="twelfth_navlink" href="#Piecing_together_our_first_Java_code">Piecing together our first Java code</a>
+            <a class="nav-link" id="thirteenth_navlink" href="#It's_all_about_a_choice">It's all about a choice</a>
+            <a class="nav-link" id="fourteenth_navlink" href="#Let's_loop_you_in">Let's loop you in</a>
+            <a class="nav-link" id="seventeenth_navlink" href="#What_next?">What next?</a>
+            <a class="nav-link" id="eighteenth_navlink" href="#References">References</a>
+        </div>
+    </nav>
+  <main id="main-doc">
+      <section class="main-section" id="Introduction">
+          <header class="section_header" id="Introduction_Header">
+              Introduction
+          </header>
+          <p>So, this is it. You journey to code(or possibly learning another language) begins here. In this particular documentation, we 
+             shall be having a look at one of the world's most popular programming languages: <strong>Java</strong></p>
+             <p>Java is an Object Oriented Language, which is widely used in the tech industry, in order to create highly scalable and reliable applications.
+                Not only PC apps, but most of the applications running on Android platform are also written in Java.
+                Some of these mobile apps include:
+                <ul>
+                    <li>Signal</li>
+                    <li>Twitter</li>
+                    <li>Spotify</li>
+                </ul>
+             </p>
+             <p>Before we get started on this coding journey, let's look at the next section and see what is required in order to proceed ahead.</p>
+      </section>
+      <section class="main-section" id="Pre_Requisites">
+        <header class="section_header" id="Pre_Requisites_Header">
+            Pre Requisites
+        </header>
+        <p>In order to learn Java, the following skills/tools are required.</p>
+        <ul>
+            <li>Pen and Paper (Or any note taking mechanism)</li>
+            <li>An IDE to write and run Java codes(Popular ones include Eclipse, IntelliJ Idea, Netbeans)</li>
+            <li><strong>The will to code and learn</strong></li>
+            <li>Patience(lots and lots of it)</li>
+            <li>Optional: Knowledge of programming.</li>
+        </ul>
+        <p>With all of the above things in place, let's dive into the lessons now. We'll now start with the ritual of writing our first program(Probably everyone does it): "Hello World".</p>
+    </section>
+    <section class="main-section" id="Printing_Hello_World">
+        <header class="section_header" id="Printing_Hello_World_Header">
+            Printing Hello World
+        </header>
+        <p>Oh, Hello There!. Let's start with our greetings. Let's open a new Java class in our IDE, and copy in the following code.</p>
+        <pre>
+        <code>
+            import java.io.*;
+            public class Printing_Hello_World{
+                public static void main(String args)
+                {
+                    System.out.println("Hello World");
+                }
+            }
+        </code>
+    </pre>
+    </section>
+    <section class="main-section" id="Variable_eh?">
+        <header class="section_header" id="Variable_Header">
+            Variable eh?
+        </header>
+        <p>Now that we have started our learning journey. Let's start out with the building blocks of every programming language, Variables.</p>
+        <p>A variable is a block within the computer's memory, which is used to store a value. This value can be either "assigned" by the user, or given as an input. </p> 
+        <p>The amount of memory <strong>blocked</strong> depends on the <strong>type</strong> of the variable( An integer, Character</p>
+        <p>The data types available in Java are</p>
+        <pre>
+        <code>
+            <li>byte: Used to store very small integer values.</li>
+            <li>small: Used to store numbers less than or equal to 32,767</li>
+            <li>int: It can store any number upto 2,147,483,647.</li>
+            <li>float: Used to store floating point numbers.(Numbers having decimal values).</li>
+            <li>long: Used to store large numbers(Numbers that do not fit in the range of an int).</li>
+            <li>double: Used to store double precision floating point numbers.</li>
+            <li>char: Used to store single character values.</li>
+            <li>String: Used to store character strings.</li>
+            <li>boolean: Can store either "True" or "False" values.</li>
+        </code>
+    </pre>
+    <p>The data types seen above are called <strong>Primitive</strong> data types(Primitive because they are defined within the system). There are other data types called <strong>Non Primitive</strong> data types.
+    These are called so because their structure needs to be defined by the user, before being used. Common examples include<em>Arrays,Structures,Classes etc.</em></p>
+</section>
+    <section class="main-section" id="Creating_our_first_Variable">
+        <header class="section_header" id="Create_Variable_Header">
+            Creating our first Variable
+        </header>
+        <p>Let's look at how to create a variable.These will help us perform operations, take user inputs etc.</p>
+        <pre>
+        <code>
+            int a=3;
+            float b=3.5;
+            char c="a";
+            double d= 3.1415;
+            long l=992929392810;
+            String s="Hello World";
+        </code>
+    </pre>
+    <p>The above code box shows how to define and "Assign" values to variables. Do keep in mind that there are specific rules while creating a variable</p>
+    <ul>
+        <li>Variables cannot start with numbers.</li>
+        <li>Variables can start with characters and '_'(underscore)</li>
+        <li>Variables can contain numbers in between.(Eg: scooter1 is a valid name, whereas 1scooter is not a valid name.</li>
+        <li>Variables cannot use any keywords as variable names(Keywords are characters/words that have a special meaning in any programming language).</li>
+    </ul>
+    <p>Now that we know how to create variables, let's continue further.</p>
+        </section>
+    <section class="main-section" id="Did_you_just_say_operation?">
+        <header class="section_header" id="Operation_Header">
+            Did you just say operation?
+        </header>
+        <p>Yes, you heard that right.OPERATION.</p>
+        <p>Unlike the real life counterparts, these operations are harmless, and can be performed with a single keystroke</p>
+        <p>In programming, operations are defined as a computation, which takes two <strong>operands</strong> and an <strong>operator</strong> to return a <strong>result</strong>.</p>
+        <p>Types of operators include</p>
+        <ul>
+            <li>Arithmetic operators: Useful for performing mathematical computations.These include +,-,*,/,%(Modulo)</li>
+            <li>Logical operators: Useful for performing "Logical" operations(mimicking real life decisions). These include &&(AND), ||(OR) and !(NOT).</li>
+            <li>Bitwise operators: Userful for performing Bit manipulations. These include &(Bitwise AND), |(Bitwise OR), ^(Bitwise XOR),~(Bitwise Compliment), <<(Bit left shift),>>(Bit Right shift),>>>(Zero Fill right shift)</li>
+        </ul>
+        <p>Read more about Bitwise operations <a target="_blank" href="https://code.tutsplus.com/articles/understanding-bitwise-operators--active-11301#:~:text=Bitwise%20operators%20are%20operators%20(just,or%20bits%20of%20an%20integer.">HERE.</a></p>
+    </section>
+    <section class="main-section" id="What_is_this_object_thing?">
+        <header class="section_header" id="Operation_Header">
+            What is this object thing?
+        </header>
+        <p>What is this object, <em>really?</em></p>
+        <p>To understand this, we need to understand <em>Classes</em></p>
+        <p>A class is a combination of variables and functions that are bundled together. A class defines what "features/characteristics" an object has.</p>
+        <p>For example, A car is a class. A BMW or an Audi may be an object( it's based on the <em>blueprint</em> of a car).</p>
+        <pre>
+        <code>
+            public class Car
+            {
+                int mileage;
+                String name;
+
+                void setMileage(int m)
+                {
+                    this.mileage=m;
+                }
+                void setName(String s)
+                {
+                    this.name=Name;
+                }
+                int getMileage()
+                {
+                    return mileage;
+                }
+                String getName()
+                {
+                    return name;
+                }
+            }
+        </code>
+        </pre>
+        <p> Now that we have seen what a class is, let's define an object</p>
+        <p>"<em>An object is an entity in a code, which has it's own characteristics and behaviours. These properties are governed by the <strong>class</strong> it belongs to</em>"</p>
+        <p>For example, a Car is a class. BMW is an object. It may have certain properties(like own set of mileage, fuel type, other features), but the basic features(it has 4 wheels,it runs on fuel, it has an engine etc.) are governed by the Class it belongs to (i.e.: Car).</p>
+        <br>
+        <p>Let's look at the components of this code</p>
+        <pre>
+            <code>
+                <strong>public</strong> class Car
+            </code>
+        </pre>
+        <p>This defines the name of the car. The boldened part is called the access specifier. This allows you to define which objects would be able to access the variables and methods of a class. More on it <a href="https://www.w3schools.com/cpp/cpp_access_specifiers.asp" target="_blank">HERE</a></p>
+        <p>The other components are variables(or Properties) of the class. And some member functions in order to access and modify these variables. More on that in the functions section.</p>
+    <p>In order to create an object, within your main class, write this statement</p>
+    <pre>
+        <code>
+            Car ob1=new Car();
+        </code>
+    </pre>
+    <p>In order to access the variables or the functions/methods of the class, use the "." operator. See an example of that below:</p>
+    <pre>
+        <code>
+            ob1.mileage=21; //Assigns a value of 21 to the mileage property of ob1.about_class
+            ob1.getName(); //Accesses the getName method 
+        </code>
+    </pre>
+    </section>
+    <section class="main-section" id="Taking_user_input">
+        <header class="section_header" id="User_Input_Header">
+            Taking user input
+        </header>
+        <p>Phew! We have sure come a long way. Let's see how we can take user input in Java</p>
+        <p>For this, you need to add an extra import statement </p>
+        <pre>
+            <code>
+                import java.util.Scanner;
+            </code>
+        </pre>
+        <p>This <strong>Scanner</strong> class allows us to accept an input from the standard input(eg: Keyboard).</p>
+        <p>In order to take input, you need to create an object of the Scanner class, and then use it to accept an input. Let's observe this from a code example.</p>
+        <pre>
+            <code>
+                import java.io.*;
+                import java.util.Scanner;
+
+                public class MyClass
+                {
+                    public static void main(String args[])
+                    {
+                        int age;
+                        Scanner s=new Scanner(System.in);
+                        age=s.nextInt();//Takes user input
+                        System.out.println(age);//Returns the input taken.
+                    }
+                }
+            </code>
+        </pre>
+        <p>As you saw from the code above, we created an object of the scanner class, and assigned it to the variable</p>
+        <p>There are various methods that allow us to take input(These depend on the data type that we are trying to take as input, so select it carefully. I'll list out the common ones below).</p>
+        <ul>
+            <li>nextInt(): Takes an integer input from a new line</li>
+            <li>nextFloat(): Takes a floating point input from a new line</li>
+            <li>nextLong(): Takes a long int input from a new line</li>
+            <li>nextDouble(): Takes a double type input from a new line</li>
+            <li>nextLine(): Takes a string/character input from a new line</li>
+        </ul>
+    </section>
+    <section class="main-section" id="What_are_functions?">
+        <header class="section_header" id="Function_Header">
+            What are functions?
+        </header>
+        <p>We already had our first encounter with functions, when we learnt about classes and objects. In this section, let's try to understand what a function is all about.</p>
+        <p>Simply put, a function is a piece of reusable code, that performs a designated operation for various inputs.</p>
+        <p>Example: A function, that takes in two numbers as inputs, and returns the sum of those two numbers. </p>
+        <p>Let's now look at how to create functions</p>
+        <pre>
+            <code>
+                <strong>int</strong> sum(int a,int b)
+                {
+                    return a+b;
+                }
+            </code>
+        </pre>
+        <p>Okay. So what really happened here?I'll try to dissect it, bit by bit</p>
+        <p>So, this little part above, it called function definition(As the name suggests, here, you define what the function does.</p>
+        <p>Every function definition contains two parts at the start: The return type(the data type that is being returned by the function, after performing the operations), and the function name.</p>
+        <p>
+            Within the curly braces, we then define what the function would do. In our function, we just have a <strong>return</strong> statement, that sends the value mentioned after the return keyword back to the standard output.
+        </p>
+        <p>We also see two numbers being fed as inputs to the function. These are called <strong>function arguments.</strong></p>
+        <p>Since this function has two arguments, it should be fed two values as inputs, else it'll throw an error.</p>
+    </section>
+    <section class="main-section" id="Creating_our_first_Java_function">
+        <header class="section_header" id="Create_Function_Header">
+            Creating our first Java function
+        </header>
+        <p>In this section, let's creat a function that calculate the area of a rectangle</p>
+        <p>As mentioned in the section above, we start with naming our function. Since I am printing the value within the function and not returning anything, Ill set the return type to <strong>void</strong>.Also, mention the number of arguments that the function would take.</p>
+        <pre>
+            <code>
+                void area_Rectangle(int length,int breadth)
+            </code>
+        </pre>
+        <p>Now,let's define what the function will do:</p>
+        <pre>
+            <code>
+                void area_Rectangle(int length,int breadth)
+                {
+                    int area=(2*length)+breadth;
+                    System.out.println(area);
+                }
+            </code>
+        </pre>
+        <p>That's it. You have just created your first Java function. :)</p>
+        <p>There are lots of topics that are still there with respect to functions: Overloading, constructors, destructors,Functions within functions etc. Please search them on Google/Stack Overflow and read once you are comfortable with Java.</p>
+    </section>
+    <section class="main-section" id="Piecing_together_our_first_Java_code">
+        <header class="section_header" id="Java_Code_Header">
+            Piecing together our first Java code
+        </header>
+        <p>Let's now combine some of the concepts that we have learnt so far, and write a full fledged code</p>
+    <pre>
+        <code>
+            import java.io.*; //Imports critical I/O Functionalities
+            import java.util.Scanner; //Imports libraries for taking user
+            public class addition//Create a class called addition
+            {
+                int result=0;
+
+                addition(int a,int b)   //Defining a constructor
+                {
+                    result=a+b;
+                }
+            }
+            public class additionMain
+            {
+                public static void main(String args)
+                {   
+                    Scanner sc=new Scanner(System.in);//Create object of scanner class
+                    int a,b;
+                    System.out.println("Enter first number");
+                    a=sc.nextInt();
+                    System.out.println("Enter second number");
+                    b=sc.nextInt();
+                    addition c=new addition(a,b); //Creating an object of class addition
+                    System.out.println("Addition result is" +c.res);
+                    //"+ sign is used to append variables to Print statements"
+                    
+                    
+                }
+            }
+        </code>
+    </pre>    
+    <p>We used this approach to cover all the concepts we covered so far. There are other approaches that are far easier than this. Feel free to try them :)</p>
+    </section>
+    <section class="main-section" id="It's_all_about_a_choice">
+        <header class="section_header" id="If_Else_Header">
+            It's all about a choice
+        </header>
+    <p>We all have a choice, when it comes to making a decision, right? So why should our code be behind?</p>
+    <p>Let's see how to add basic decision making capability to our code with an If-Else statement</p>
+    <p>Consider that an amusement park wants to check who can ride a particular ride. If height of a person is less than 5.5 feet, they are not allowed, else, well it's just magic :D</p>
+    <p>Let's write a very very simple code for this</p>
+    <pre>
+        <code>
+            import java.io.*;
+            import java.util.Scanner;
+            public class Choice
+            {
+                public static void main(String args)
+                {
+                    int a;
+                    Scanner sc=new Scanner(System.in);
+                    System.out.println("Enter height of person");
+                    a=sc.nextInt();
+                    if(a < 5.5)//What to do if value of a is less than 5.5
+                    {
+                        System.out.println("Sorry. You're not allowed");
+                    }
+                    else//What to do if value of a is equal to or more than 5.5
+                    {
+                        System.out.println("All aboard");
+                    }
+                
+                }
+            }
+        </code>
+    </pre>    
+    </section>
+    <section class="main-section" id="Let's_loop_you_in">
+        <header class="section_header" id="Loop_Header">
+            Let's loop you in
+        </header>
+    <p>Now we come to the last topic of this documentation:Loops</p>
+    <p>Loops help us to do a <strong>repetitive</strong> task. For example, finding the factorial of the first 10 numbers, or summing the first ten natural numbers.</p>
+    <p>There are mainly three kinds of basic loops.These include</p>
+    <ul>
+        <li>For loop</li>
+        <li>While loop</li>
+        <li>Do-while loop</li>
+    </ul>    
+    <p>Their functionality is more or less similar. The only difference is the way each of them is written. Let's see</p>
+    <h3>The For loop</h3>
+    <p>The for loop is the easiest loop to implement. It is controlled by three variables: An initilizer, an update condition, and a change function</p>
+    <p>Let's see how a For loop is implemented</p>
+    <pre>
+        <code>
+         //A simple for loop to calculate sum of numbers from 1-10
+         int sum=0;
+         for(int i=1;i<=10;i++)
+         {
+             sum=sum+i;
+         }
+         System.out.println(sum);   
+        </code>
+    </pre>
+    <h3>The while loop</h3>
+    <p>The while loop is a similar entry controlled loop as the for loop. Then only thing that varies is the syntax</p>
+    <p>Let's see how a while loop is implemented</p>
+    <pre> 
+        <code>
+         //A simple program to calculate sum of numbers from 1-10 using a while loop
+         int sum=0;
+         int i=1//Initializer;
+         while(i<=10)//Update condition
+         {
+             sum=sum+i;
+             i++; //Change function
+         }
+         System.out.println(sum);
+            
+        </code>
+    </pre>
+    <h3>The do-while loop</h3>
+    <p>The do-while loop is an exit controlled loop. What it means is that it checks the condition on exit(unlike the while or for loop, which tests condition on loop entry). This ensures that the loop executes atleast once, even if the condition is false.</p>
+    <p>For the given code, while loop will give value as 10, whereas the for loop and the while loop will give value as 0 </p>
+    <pre>
+        <code>
+            int i=10;
+            int sum=0;
+            do{
+                sum=sum+i;
+                i++;
+            }while(i < 10);
+            System.out.println(sum);
+        </code>
+    </pre>
+    <p>Let's see how a do-while loop is implemented</p>
+    <pre> 
+        <code>
+         //A simple do-while loop to calculate sum of numbers from 1-10 
+         int sum=0;
+         int i=0//Initializer;
+         do
+         {
+             sum=sum+i;
+             i++;
+         }while(i <= 10);
+         System.out.println(sum);
+            
+        </code>
+    </pre>
+</section>
+<section class="main-section" id="What_next?">
+    <header class="section_header" id="Next_Header">
+        What next?
+    </header>
+    <p>Hey there! Fist of all, congratulations for reaching till this point. You now have, atleast a basic understanding of coding in Java.</p>
+    <p>If you liked what you learnt, you can try any of the following paths</p>
+    <ul>
+        <li>Algorithms and Data Structures in Java</li>
+        <li>Competitive Programming in Java</li>
+        <li>Java frameworks:Spring, Hibernate etc.</li>
+        <li>Use your java skills to create Android applications, and a lot more....</li>
+    </ul>
+</section>
+<section class="main-section" id="References">
+    <header class="section_header" id="References_Header">
+        References
+    </header>
+    <p>The following websites and resources made this webpage possible</p>
+<ul>    
+    <li>Codecademy</li>
+    <li>W3 Schools</li>
+    <li>Java tpoint</li>
+    <li>And obviously, Stack Overflow</li>
+</ul>
+</section>
+</body>
+<div id="tribute_div">
+    <p>Made by Anirudh. All my creations, from the simplest to the most complex will be a tribute to <a href="https://fossiiita.github.io/humblefoolcup/humblefool/humblefool.html" target="_blank">Harsha Suryanarayana</a></p>
+
+</div>
+</main>
+</html>

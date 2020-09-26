@@ -1,0 +1,302 @@
+*
+{
+    transition: all .5s ease-in;
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color:black;
+    color:white;
+    font-size: 16px;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+}
+#nav-bar
+{
+    background-color: black;
+    height: 7%;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 900;
+  
+}
+/*#brand-box
+{
+    display: flex;
+}*/
+#links
+{
+    margin-top: 1%!important;
+   margin:auto;
+    width: 80%;
+    flex: 1 1 1;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-family:'Open Sans',sans-serif ;
+    font-weight: 500;
+}
+#welcome-section
+{
+    padding-top:150px;
+    margin-bottom: 50px;
+    height: 100vh;
+    width: 100%;
+}
+#welcome-img
+{
+    margin:auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#welcome-img img
+{
+    position: relative;
+    bottom: 10px;
+    right: 30px;
+    transform:scale(1.3);
+    width: 100%;
+    height: auto;
+}
+#name-head
+{
+    font-size: 5rem;
+    font-family: 'Open Sans',sans-serif;
+}
+#bio-head
+{
+    font-size: 0.9rem;
+    font-family: 'Open Sans',sans-serif;
+}
+#head-div
+{
+   text-align: center;
+   font-size: 100px;
+}
+
+#about_div
+{
+    margin-top: 200px;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#about_div>div
+{
+    
+    height:50%;
+    width: 50%;
+}
+#about-head
+{
+    font-family:'Open Sans',sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 15%!important;
+    margin:auto;
+    width: 50%;
+    border-left: 7px solid #FA4631;
+}
+#about-two
+{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: lighter;
+    line-height: 30px;
+    width:30%!important;
+    margin:auto;
+}
+#skills_div
+{
+    margin-top:10em!important;
+    margin: auto;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+#skills_div>div
+{
+    width: 50%;
+    height: auto;
+}
+#skills-one
+{
+    padding-left: 40px;
+    width: 80%!important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+}
+#skills-one p
+{
+    font-family: 'Open Sans',sans-serif;
+}
+#skills_head
+{
+  text-align: right;
+  margin: auto;
+  margin-top:40%;
+  margin-bottom: 40%;
+  width: 45%;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 3rem;
+  border-left: 7px solid #689775 ;
+}
+#htmlicon p
+{
+    margin-left: 4px;
+}
+#cssicon p
+{
+    margin-left: 8px;
+}
+#jsicon p
+{
+    margin-left:-5px;
+}
+#bsicon p
+{
+    margin-left: -10px;
+}
+#javaicon p
+{
+    margin-left: 10px;
+}
+#dbicon p
+{
+    margin-left: 15px;
+}
+#giticon p
+{
+    margin-left: 17px;
+}
+#cicon p
+{
+    margin-left: 8px;
+}
+i:hover
+{
+    transform: scale(1.3);
+}
+.fa-html5:hover
+{
+    color:#039dfc;
+}
+.fa-css3-alt:hover
+{
+    color: orangered;
+}
+.fa-js:hover
+{
+    color: yellow;
+}
+.fa-bootstrap:hover
+{
+    color:#9803fc
+}
+.fa-python:hover
+{
+    color: yellow;
+}
+.fa-git-alt:hover
+{
+    color: #cc460c;
+}
+.fa-cuttlefish:hover
+{
+    color:#03d3fc
+}
+#projects_div
+{
+    width: 90%;
+    margin:auto;
+}
+#projects-one
+{
+    margin-top: 10em;
+}
+#projects-head
+{
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 3.5rem;
+}
+#projects-two
+{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+@media screen and (max-width:830px)
+{
+    #about_div
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    #about-one
+    {
+        width: 100%!important;
+        justify-content: center;
+
+    }
+    #about-head
+    {
+        width: 60%;
+    }
+    #about-two
+    {
+        width: 90%!important;
+    }
+    #skills_div
+    {
+        width: 100%;
+    }
+    #skills-one
+    {
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+    }
+    #skills-two
+    {
+        width: 100%;
+        margin-right: 70px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #skills_head
+    {
+        width: 70%;
+        margin-left: 10px;
+    }
+    #projects_div
+    {
+        width: 100%;
+    }
+    #projects-head
+    {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:720px)
+{
+    #name-head
+    {
+        font-size: 11vw;
+    }
+}

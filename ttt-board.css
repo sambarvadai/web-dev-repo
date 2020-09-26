@@ -1,0 +1,23 @@
+table
+{
+
+    margin: 20px auto 0px auto;
+}
+td
+{
+    width: 100px;
+    height:100px;
+}
+#one-one,#two-one,#one-two,#two-two
+{
+    border-right:2px solid black;
+    border-bottom: 2px solid black;
+}
+#one-three,#two-three
+{
+    border-bottom:2px solid black;
+}
+#three-one,#three-two
+{
+    border-right: 2px solid black;
+}

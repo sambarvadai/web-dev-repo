@@ -1,0 +1,148 @@
+body{
+}
+#navbar
+{
+    z-index:1;
+    background-color: white;
+    position:fixed;
+    left: 0;
+    top:0;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    height: 100%;
+    width:300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-right: 3px solid #45ada8;
+
+}
+#nav_header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    margin-top: -50px;
+    font-size:1.3em;
+    padding-bottom:10px;
+    padding-top: 75px;
+    padding-left:40px;
+    padding-right: 55px;
+    color: #838181;
+    font-family: Raleway,sans-serif;
+    font-weight: 800;
+    background-color: white;
+    border-bottom: 1px solid #45ada8;
+    z-index: 1;
+}
+#navbar>a
+{
+    background-color: white;
+    position: relative;
+    top:4em;
+    display: block;
+    font-size:1em;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #45ada8;
+    width: 100%;
+    left:0;
+    color: #838181;
+    font-family: Raleway;
+    text-decoration: none;
+}
+main
+{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    position:absolute;
+    left:23em;
+    top: 2.5em;
+    font-family: Open Sans, Sans-Serif;
+}
+li
+{
+    font-size: 1em;
+    word-wrap: break-word;
+}
+section p
+{
+    margin-left: 18px;
+    font-size: 14px;
+}
+section li
+{
+    margin-left:20px;
+}
+section header
+{
+    font-weight: 800;
+    font-size: 26px;
+}
+code
+{
+    display: block;
+    font-size:1em;
+    background-color:#f7f7f7;
+    width: 90%;
+    min-width: 500px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+#tribute_div
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    width:110%;
+    position:static;
+    margin-left:-15px;
+    background-color: #45ada8;
+    text-align: center;
+}
+div a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+div a:hover
+{
+    color:navy
+}
+@media(max-width:1050px)
+{
+    #navbar
+    {
+        width:100%;
+        min-height:100px;
+        max-height:20%;
+        overflow-x: hidden;
+        border-bottom: 3px solid #45ada8;
+        z-index:1;
+    }
+    #nav_header
+    {
+        width: 100%;
+        padding:0;
+        top:20px;
+        padding-top:35px;
+        height:8%;
+        text-align: center;
+    }
+  
+#main-doc
+{
+    width: 100%;
+    position: relative;
+    left:20px   ;
+    font-size: 0.9em;
+    top:120px;
+}
+code
+{
+    font-size: 0.8em;
+    width: 60%;
+}
+}
